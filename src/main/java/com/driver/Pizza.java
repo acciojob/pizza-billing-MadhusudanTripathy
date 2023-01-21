@@ -137,7 +137,7 @@ public class Pizza {
             bill+=(!extraCheeseAdded)?"":"Extra Cheese Added: "+extraCheeseCost+"\n";
             bill+=(!extraToppingsAdded)?"":"Extra Toppings Added: "+extraToppingsCost+"\n";
             bill+=(!extraTakewayAdded)?"":"Paperbag Added: "+extraTakewayCost+"\n";
-            bill+="Total Price:"+String.valueOf(price);
+            bill+="Total Price: "+String.valueOf(price);
             isBillGenerated=true;
         }
         return this.bill;
