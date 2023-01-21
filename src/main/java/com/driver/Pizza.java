@@ -133,10 +133,10 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(!isBillGenerated){
-
-            bill+=(extraCheeseAdded)?"":"Extra Cheese Added: "+extraCheeseCost+"\n";
-            bill+=(extraToppingsAdded)?"":"Extra Toppings Added: "+extraToppingsCost+"\n";
-            bill+=(extraTakewayAdded)?"":"Paperbag Added: "+extraTakewayCost+"\n";
+            bill+="Base Price Of The Pizza: "+((isVeg)?300:400)+"\n";
+            bill+=(!extraCheeseAdded)?"":"Extra Cheese Added: "+extraCheeseCost+"\n";
+            bill+=(!extraToppingsAdded)?"":"Extra Toppings Added: "+extraToppingsCost+"\n";
+            bill+=(!extraTakewayAdded)?"":"Paperbag Added: "+extraTakewayCost+"\n";
             bill+="Total Price:"+String.valueOf(price);
             isBillGenerated=true;
         }
